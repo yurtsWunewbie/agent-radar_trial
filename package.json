@@ -22,7 +22,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "prepare": "husky"
+    "prepare": "husky",
+    "radar:top5": "tsx src/top5.ts",
+    "notify:top5:feishu": "tsx src/notify-top5-feishu.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.78.0",

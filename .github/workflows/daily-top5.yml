@@ -1,0 +1,58 @@
+﻿name: Daily Top5 Radar
+
+on:
+  schedule:
+    # 10:00 UTC = 18:00 GMT+8
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  top5:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run top5 radar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LLM_PROVIDER: deepseek
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: pnpm radar:top5
+
+      - name: Commit top5 files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add digests/
+          if git diff --cached --quiet; then
+            echo "No top5 files to commit"
+          else
+            DATE=$(TZ=Asia/Shanghai date +%Y-%m-%d)
+            git commit -m "top5: ${DATE} radar"
+            git pull --rebase
+            git push
+          fi
+
+      - name: Send Feishu top5 notification
+        env:
+          FEISHU_WEBHOOK_URLS: ${{ secrets.FEISHU_WEBHOOK_URLS }}
+          PAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+        run: pnpm notify:top5:feishu
