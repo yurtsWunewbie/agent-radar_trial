@@ -50,8 +50,24 @@ const TOP_PICKS = 5;
 const RERANK_TOKENS = 2048;
 
 const KEYWORDS = [
-  "agent", "agents", "ai", "llm", "openai", "claude", "deepseek", "rag", "vector",
-  "coding", "cli", "workflow", "automation", "developer", "model", "inference", "browser", "search",
+  "agent",
+  "agents",
+  "ai",
+  "llm",
+  "openai",
+  "claude",
+  "deepseek",
+  "rag",
+  "vector",
+  "coding",
+  "cli",
+  "workflow",
+  "automation",
+  "developer",
+  "model",
+  "inference",
+  "browser",
+  "search",
 ];
 
 function normalizeUrl(url: string): string {
@@ -77,7 +93,9 @@ function clampScore(value: number): number {
 }
 
 function scoreItem(item: Omit<RadarLink, "totalScore" | "ruleReason">): RadarLink {
-  const totalScore = clampScore(item.sourceScore + item.freshnessScore + item.relevanceScore + item.popularityScore);
+  const totalScore = clampScore(
+    item.sourceScore + item.freshnessScore + item.relevanceScore + item.popularityScore,
+  );
   const ruleReason = [
     item.source,
     item.details[0] ?? "link signal",
@@ -115,62 +133,77 @@ function escapeHtml(text: string): string {
 }
 
 async function collectLinks(): Promise<RadarLink[]> {
-  const [trending, hn, lobsters] = await Promise.all([fetchTrendingData(), fetchHnData(), fetchLobstersData()]);
+  const [trending, hn, lobsters] = await Promise.all([
+    fetchTrendingData(),
+    fetchHnData(),
+    fetchLobstersData(),
+  ]);
   const items: RadarLink[] = [];
 
   for (const repo of trending.trendingRepos) {
-    items.push(scoreItem({
-      title: repo.fullName,
-      url: repo.url,
-      source: "GitHub Trending",
-      sourceScore: 22,
-      freshnessScore: repo.todayStars > 0 ? 18 : 10,
-      relevanceScore: keywordScore(repo.fullName + " " + repo.description + " " + repo.language),
-      popularityScore: Math.min(26, repo.todayStars * 2 + Math.log10(repo.totalStars + 1) * 4),
-      details: [String(repo.todayStars) + " stars today", repo.language || "unknown language"],
-    }));
+    items.push(
+      scoreItem({
+        title: repo.fullName,
+        url: repo.url,
+        source: "GitHub Trending",
+        sourceScore: 22,
+        freshnessScore: repo.todayStars > 0 ? 18 : 10,
+        relevanceScore: keywordScore(repo.fullName + " " + repo.description + " " + repo.language),
+        popularityScore: Math.min(26, repo.todayStars * 2 + Math.log10(repo.totalStars + 1) * 4),
+        details: [String(repo.todayStars) + " stars today", repo.language || "unknown language"],
+      }),
+    );
   }
 
   for (const repo of trending.searchRepos) {
-    items.push(scoreItem({
-      title: repo.fullName,
-      url: repo.url,
-      source: "GitHub Search",
-      sourceScore: 18,
-      freshnessScore: 16,
-      relevanceScore: keywordScore(repo.fullName + " " + (repo.description ?? "") + " " + repo.searchQuery) + 8,
-      popularityScore: Math.min(24, Math.log10(repo.stargazersCount + 1) * 6),
-      details: [String(repo.stargazersCount) + " stars", "topic: " + repo.searchQuery],
-    }));
+    items.push(
+      scoreItem({
+        title: repo.fullName,
+        url: repo.url,
+        source: "GitHub Search",
+        sourceScore: 18,
+        freshnessScore: 16,
+        relevanceScore:
+          keywordScore(repo.fullName + " " + (repo.description ?? "") + " " + repo.searchQuery) + 8,
+        popularityScore: Math.min(24, Math.log10(repo.stargazersCount + 1) * 6),
+        details: [String(repo.stargazersCount) + " stars", "topic: " + repo.searchQuery],
+      }),
+    );
   }
 
   for (const story of hn.stories) {
-    items.push(scoreItem({
-      title: story.title,
-      url: story.url,
-      source: "Hacker News",
-      sourceScore: 18,
-      freshnessScore: 18,
-      relevanceScore: keywordScore(story.title),
-      popularityScore: Math.min(26, story.points / 8 + story.comments / 5),
-      details: [String(story.points) + " points", String(story.comments) + " comments"],
-    }));
+    items.push(
+      scoreItem({
+        title: story.title,
+        url: story.url,
+        source: "Hacker News",
+        sourceScore: 18,
+        freshnessScore: 18,
+        relevanceScore: keywordScore(story.title),
+        popularityScore: Math.min(26, story.points / 8 + story.comments / 5),
+        details: [String(story.points) + " points", String(story.comments) + " comments"],
+      }),
+    );
   }
 
   for (const story of lobsters.stories) {
-    items.push(scoreItem({
-      title: story.title,
-      url: story.url,
-      source: "Lobsters",
-      sourceScore: 14,
-      freshnessScore: 14,
-      relevanceScore: keywordScore(story.title + " " + story.tags.join(" ")),
-      popularityScore: Math.min(20, story.score * 2 + story.commentCount),
-      details: [String(story.score) + " score", String(story.commentCount) + " comments"],
-    }));
+    items.push(
+      scoreItem({
+        title: story.title,
+        url: story.url,
+        source: "Lobsters",
+        sourceScore: 14,
+        freshnessScore: 14,
+        relevanceScore: keywordScore(story.title + " " + story.tags.join(" ")),
+        popularityScore: Math.min(20, story.score * 2 + story.commentCount),
+        details: [String(story.score) + " score", String(story.commentCount) + " comments"],
+      }),
+    );
   }
 
-  return dedupe(items).sort((a, b) => b.totalScore - a.totalScore).slice(0, TARGET_LINKS);
+  return dedupe(items)
+    .sort((a, b) => b.totalScore - a.totalScore)
+    .slice(0, TARGET_LINKS);
 }
 
 function buildRerankPrompt(links: RadarLink[]): string {
@@ -190,7 +223,7 @@ function buildRerankPrompt(links: RadarLink[]): string {
     "Optimize for: usefulness to builders, novelty, project quality, practical value, and signal diversity.",
     "Avoid picking near-duplicates. Prefer projects or links with clear hands-on value.",
     "Return only valid JSON, no markdown fences.",
-    "Schema: {\"picks\":[{\"rank\":1,\"title\":\"...\",\"url\":\"...\",\"score\":90,\"reason\":\"Chinese reason\",\"audience\":\"Chinese audience\",\"risk\":\"Chinese caveat\"}]}",
+    'Schema: {"picks":[{"rank":1,"title":"...","url":"...","score":90,"reason":"Chinese reason","audience":"Chinese audience","risk":"Chinese caveat"}]}',
     "Candidates:",
     JSON.stringify(candidates, null, 2),
   ].join("\n");
@@ -208,7 +241,9 @@ function fallbackPicks(links: RadarLink[]): LlmPick[] {
   }));
 }
 
-async function rerankWithLlm(links: RadarLink[]): Promise<{ picks: LlmPick[]; usedLlm: boolean; error?: string }> {
+async function rerankWithLlm(
+  links: RadarLink[],
+): Promise<{ picks: LlmPick[]; usedLlm: boolean; error?: string }> {
   try {
     const raw = await callLlm(buildRerankPrompt(links), RERANK_TOKENS);
     const parsed = parseLlmJson<LlmTop5Response>(raw);
@@ -244,7 +279,11 @@ function buildReport(payload: Top5Payload): string {
   const lines = [
     "# Agents Radar Top 5 - " + payload.date,
     "",
-    "> Collected and deduped " + payload.candidates.length + " links, rule-scored the candidate pool, then " + (payload.usedLlm ? "reranked with LLM" : "used rule fallback") + " to produce 5 recommendations.",
+    "> Collected and deduped " +
+      payload.candidates.length +
+      " links, rule-scored the candidate pool, then " +
+      (payload.usedLlm ? "reranked with LLM" : "used rule fallback") +
+      " to produce 5 recommendations.",
     "",
   ];
 
@@ -274,7 +313,21 @@ function buildReport(payload: Top5Payload): string {
   lines.push("|---:|---:|---|---|---|");
 
   for (const [index, item] of payload.candidates.entries()) {
-    lines.push("| " + (index + 1) + " | " + item.totalScore + " | " + item.source + " | [" + markdownEscape(item.title) + "](" + item.url + ") | " + markdownEscape(item.details.join(", ")) + " |");
+    lines.push(
+      "| " +
+        (index + 1) +
+        " | " +
+        item.totalScore +
+        " | " +
+        item.source +
+        " | [" +
+        markdownEscape(item.title) +
+        "](" +
+        item.url +
+        ") | " +
+        markdownEscape(item.details.join(", ")) +
+        " |",
+    );
   }
 
   lines.push("");
@@ -284,7 +337,9 @@ function buildReport(payload: Top5Payload): string {
 }
 
 function buildHtml(payload: Top5Payload): string {
-  const cards = payload.picks.map((pick) => `
+  const cards = payload.picks
+    .map(
+      (pick) => `
     <article class="pick">
       <div class="score">${pick.score}</div>
       <div>
@@ -296,16 +351,22 @@ function buildHtml(payload: Top5Payload): string {
           <div><dt>Signal</dt><dd>${escapeHtml([pick.source ?? "Unknown", ...(pick.signals ?? [])].join(" · "))}</dd></div>
         </dl>
       </div>
-    </article>`).join("\n");
+    </article>`,
+    )
+    .join("\n");
 
-  const rows = payload.candidates.map((item, index) => `
+  const rows = payload.candidates
+    .map(
+      (item, index) => `
       <tr>
         <td>${index + 1}</td>
         <td>${item.totalScore}</td>
         <td>${escapeHtml(item.source)}</td>
         <td><a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a></td>
         <td>${escapeHtml(item.details.join(", "))}</td>
-      </tr>`).join("\n");
+      </tr>`,
+    )
+    .join("\n");
 
   return `<!doctype html>
 <html lang="zh-CN">

@@ -23,7 +23,10 @@ const PAGES_URL_DEFAULT = "https://duanyytop.github.io/agents-radar";
 
 function getWebhookUrls(): string[] {
   const raw = process.env["FEISHU_WEBHOOK_URLS"] ?? process.env["FEISHU_WEBHOOK_URL"] ?? "";
-  return raw.split(",").map((url) => url.trim()).filter(Boolean);
+  return raw
+    .split(",")
+    .map((url) => url.trim())
+    .filter(Boolean);
 }
 
 function getPagesUrl(): string {

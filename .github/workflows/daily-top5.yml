@@ -46,7 +46,7 @@ jobs:
             echo "No top5 files to commit"
           else
             DATE=$(TZ=Asia/Shanghai date +%Y-%m-%d)
-            git commit -m "top5: ${DATE} radar"
+            git commit --no-verify -m "top5: ${DATE} radar"
             git pull --rebase
             git push
           fi
