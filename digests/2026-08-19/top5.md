@@ -4,84 +4,84 @@
 
 ## Top 5 Recommendations
 
-### 1. [langgenius/dify](https://github.com/langgenius/dify)
+### 1. [browser-use/browser-use](https://github.com/browser-use/browser-use)
 
-- Score: 92
+- Score: 86
 - Source: GitHub Search
-- Why: 开源LLM应用开发平台，支持可视化编排、RAG、Agent工作流，生产级部署成熟，社区活跃。适合快速构建企业级AI应用，可大幅降低开发成本。
-- Best for: AI应用开发者、企业技术团队、解决方案架构师
-- Watch out: 项目体量庞大，学习曲线较陡，需投入时间掌握其全功能。
-- Signals: 152861 stars, topic: llm
+- Why: 让AI直接操控浏览器的开源库，支持自动化网页操作和代理任务，实用性强，适合构建自主网络代理。
+- Best for: 面向需要构建自动化浏览器代理的开发者，尤其是从事RPA和智能助手领域的团队。
+- Watch out: 项目更新快速，API可能频繁变动；浏览器自动化可能受网站反爬限制，需注意合规性。
+- Signals: 109705 stars, topic: llm
 
-### 2. [huggingface/transformers](https://github.com/huggingface/transformers)
+### 2. [topoteretes/cognee](https://github.com/topoteretes/cognee)
 
-- Score: 91
+- Score: 82
 - Source: GitHub Search
-- Why: 最主流的预训练模型库，支持数千种模型和任务，API统一，生态完善。是AI开发者的基础工具，实用价值极高。
-- Best for: 机器学习工程师、研究人员、AI产品开发者
-- Watch out: 资源消耗大，需根据任务选择合适模型，避免过度使用。
-- Signals: 164234 stars, topic: llm
+- Why: 将RAG与记忆管理结合的开源框架，提供知识图谱和向量存储的集成方案，有助于增强LLM的长时记忆和上下文理解。
+- Best for: 适合希望为AI应用增加持久记忆和知识关联的开发者，尤其对构建个性化助手或知识库系统的人。
+- Watch out: 项目处于早期阶段，文档可能不完善，且与现有RAG工具链的兼容性需要测试。
+- Signals: 30114 stars, topic: vector-db
 
-### 3. [mem0ai/mem0](https://github.com/mem0ai/mem0)
+### 3. [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)
 
-- Score: 88
+- Score: 82
 - Source: GitHub Search
-- Why: 为AI Agent提供长期记忆层的开源方案，支持多种向量数据库，易于集成，可显著提升Agent的上下文理解能力，是当前热门方向。
-- Best for: Agent开发者、RAG系统构建者、智能问答产品团队
-- Watch out: 项目较新，API可能变动，需关注版本更新。
-- Signals: 63560 stars, topic: rag
+- Why: 一款面向多LLM的桌面客户端，支持多种模型管理和本地优先，提供直观的界面用于对话和工具调用，提升开发调试效率。
+- Best for: 面向需要同时管理多个AI模型（如Claude、GPT）的开发者，以及普通用户希望高效使用大语言模型场景。
+- Watch out: 桌面应用维护成本高，可能依赖特定平台，且非官方工具存在安全隐私需自行评估。
+- Signals: 50754 stars, topic: ai-agent
 
-### 4. [browser-use/browser-use](https://github.com/browser-use/browser-use)
+### 4. [mem0ai/mem0](https://github.com/mem0ai/mem0)
 
-- Score: 87
+- Score: 82
 - Source: GitHub Search
-- Why: 让AI通过自然语言控制浏览器，实现自动化操作，如数据抓取、表单填写等。对构建浏览器Agent或自动化测试极具实用价值。
-- Best for: RPA开发者、自动化测试工程师、网页数据采集人员
-- Watch out: 依赖浏览器环境，可能受页面结构变化影响，且需要关注安全权限。
-- Signals: 109670 stars, topic: llm
+- Why: 开源AI记忆层，为LLM应用提供一致的记忆存储和检索接口，简单易用，适合给任何智能体添加长期记忆能力。
+- Best for: 需要为聊天机器人和Agent增加记忆功能的开发者，尤其是想快速实现个性化交互的团队。
+- Watch out: 记忆持久化的策略可能影响数据隐私，需确认数据存储位置和方式是否符合法规。
+- Signals: 63586 stars, topic: rag
 
-### 5. [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)
+### 5. [mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)
 
-- Score: 85
-- Source: GitHub Search
-- Why: 系统学习Claude Code的教程仓库，涵盖原理、安装、使用和最佳实践，对开发者快速掌握AI编程助手很有帮助。
-- Best for: 使用Claude Code的程序员、AI编程工具学习者
-- Watch out: 教程内容可能随Claude Code更新而滞后，需对照官方文档使用。
-- Signals: 74602 stars, topic: ai-agent
+- Score: 86
+- Source: GitHub Trending
+- Why: GitHub Trending中快速获得关注，聚焦将Anthropic模型用于网络安全任务，提供实用的技能包和示例，具备前瞻性。
+- Best for: 面向网络安全领域的技术人员，特别是希望利用AI辅助漏洞分析、安全自动化的人。
+- Watch out: 项目刚起步，依赖Anthropic的API，可能受限于访问权限和成本，且安全场景需谨慎验证。
+- Signals: 730 stars today, Python
 
 ## 30-Candidate Pool
 
 | # | Rule score | Source | Title | Signals |
 |---:|---:|---|---|---|
-| 1 | 90 | GitHub Search | [santifer/career-ops](https://github.com/santifer/career-ops) | 65374 stars, topic: ai-agent |
-| 2 | 90 | GitHub Search | [langgenius/dify](https://github.com/langgenius/dify) | 152861 stars, topic: llm |
-| 3 | 90 | GitHub Search | [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | 66816 stars, topic: rag |
-| 4 | 90 | GitHub Search | [langchain4j/langchain4j](https://github.com/langchain4j/langchain4j) | 12903 stars, topic: vector-db |
-| 5 | 90 | GitHub Search | [neuml/txtai](https://github.com/neuml/txtai) | 12892 stars, topic: vector-db |
+| 1 | 90 | GitHub Search | [langgenius/dify](https://github.com/langgenius/dify) | 152890 stars, topic: llm |
+| 2 | 90 | GitHub Search | [langchain4j/langchain4j](https://github.com/langchain4j/langchain4j) | 12905 stars, topic: vector-db |
+| 3 | 90 | GitHub Search | [neuml/txtai](https://github.com/neuml/txtai) | 12892 stars, topic: vector-db |
+| 4 | 90 | GitHub Search | [santifer/career-ops](https://github.com/santifer/career-ops) | 65413 stars, topic: ai-agent |
+| 5 | 90 | GitHub Search | [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | 66847 stars, topic: rag |
 | 6 | 86 | GitHub Trending | [mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | 730 stars today, Python |
-| 7 | 86 | GitHub Search | [browser-use/browser-use](https://github.com/browser-use/browser-use) | 109670 stars, topic: llm |
-| 8 | 86 | GitHub Search | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 107992 stars, topic: llm |
-| 9 | 86 | GitHub Search | [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 133151 stars, topic: rag |
-| 10 | 85 | GitHub Search | [Eigenwise/atomic-agents](https://github.com/Eigenwise/atomic-agents) | 6185 stars, topic: llm-model |
+| 7 | 86 | GitHub Search | [browser-use/browser-use](https://github.com/browser-use/browser-use) | 109705 stars, topic: llm |
+| 8 | 86 | GitHub Search | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 108102 stars, topic: llm |
+| 9 | 86 | GitHub Search | [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 133188 stars, topic: rag |
+| 10 | 85 | GitHub Search | [Eigenwise/atomic-agents](https://github.com/Eigenwise/atomic-agents) | 6186 stars, topic: llm-model |
 | 11 | 82 | GitHub Trending | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 648 stars today, Rust |
 | 12 | 82 | GitHub Trending | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 213 stars today, Python |
 | 13 | 82 | GitHub Search | [zchoi/Awesome-Embodied-Robotics-and-Agent](https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent) | 1853 stars, topic: llm-model |
 | 14 | 82 | GitHub Search | [zi-yue-1129/DATAGEN](https://github.com/zi-yue-1129/DATAGEN) | 1790 stars, topic: llm-model |
-| 15 | 82 | GitHub Search | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 50742 stars, topic: ai-agent |
-| 16 | 82 | GitHub Search | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 47157 stars, topic: ai-agent |
-| 17 | 82 | GitHub Search | [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 34802 stars, topic: ai-agent |
-| 18 | 82 | GitHub Search | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 241010 stars, topic: llm |
-| 19 | 82 | GitHub Search | [huggingface/transformers](https://github.com/huggingface/transformers) | 164234 stars, topic: llm |
-| 20 | 82 | GitHub Search | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 91184 stars, topic: rag |
-| 21 | 82 | GitHub Search | [mem0ai/mem0](https://github.com/mem0ai/mem0) | 63560 stars, topic: rag |
-| 22 | 82 | GitHub Search | [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) | 55380 stars, topic: rag |
-| 23 | 82 | GitHub Search | [topoteretes/cognee](https://github.com/topoteretes/cognee) | 30113 stars, topic: vector-db |
-| 24 | 82 | GitHub Search | [lancedb/lancedb](https://github.com/lancedb/lancedb) | 11188 stars, topic: vector-db |
-| 25 | 82 | GitHub Search | [databendlabs/databend](https://github.com/databendlabs/databend) | 9414 stars, topic: vector-db |
-| 26 | 78 | GitHub Search | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 232660 stars, topic: ai-agent |
-| 27 | 78 | GitHub Search | [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 74602 stars, topic: ai-agent |
-| 28 | 78 | GitHub Search | [thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist) | 73563 stars, topic: ai-agent |
-| 29 | 78 | GitHub Search | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | 63318 stars, topic: ai-agent |
-| 30 | 78 | GitHub Search | [zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) | 46558 stars, topic: ai-agent |
+| 15 | 82 | GitHub Search | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 241056 stars, topic: llm |
+| 16 | 82 | GitHub Search | [huggingface/transformers](https://github.com/huggingface/transformers) | 164250 stars, topic: llm |
+| 17 | 82 | GitHub Search | [topoteretes/cognee](https://github.com/topoteretes/cognee) | 30114 stars, topic: vector-db |
+| 18 | 82 | GitHub Search | [lancedb/lancedb](https://github.com/lancedb/lancedb) | 11190 stars, topic: vector-db |
+| 19 | 82 | GitHub Search | [databendlabs/databend](https://github.com/databendlabs/databend) | 9414 stars, topic: vector-db |
+| 20 | 82 | GitHub Search | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 50754 stars, topic: ai-agent |
+| 21 | 82 | GitHub Search | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 47166 stars, topic: ai-agent |
+| 22 | 82 | GitHub Search | [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 34837 stars, topic: ai-agent |
+| 23 | 82 | GitHub Search | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 91210 stars, topic: rag |
+| 24 | 82 | GitHub Search | [mem0ai/mem0](https://github.com/mem0ai/mem0) | 63586 stars, topic: rag |
+| 25 | 82 | GitHub Search | [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) | 55379 stars, topic: rag |
+| 26 | 78 | GitHub Search | [ScrapeGraphAI/Scrapegraph-ai](https://github.com/ScrapeGraphAI/Scrapegraph-ai) | 29722 stars, topic: llm-model |
+| 27 | 78 | GitHub Search | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 232777 stars, topic: llm |
+| 28 | 78 | GitHub Search | [ollama/ollama](https://github.com/ollama/ollama) | 178943 stars, topic: llm |
+| 29 | 78 | GitHub Search | [open-webui/open-webui](https://github.com/open-webui/open-webui) | 149214 stars, topic: llm |
+| 30 | 78 | GitHub Search | [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 144541 stars, topic: llm |
 
 _Generated by agents-radar top5._

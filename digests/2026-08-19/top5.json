@@ -1,95 +1,80 @@
 {
   "date": "2026-08-19",
-  "generatedAt": "2026-08-19T04:55:58.715Z",
+  "generatedAt": "2026-08-19T10:18:42.054Z",
   "usedLlm": true,
   "picks": [
     {
       "rank": 1,
-      "title": "langgenius/dify",
-      "url": "https://github.com/langgenius/dify",
-      "score": 92,
-      "reason": "开源LLM应用开发平台，支持可视化编排、RAG、Agent工作流，生产级部署成熟，社区活跃。适合快速构建企业级AI应用，可大幅降低开发成本。",
-      "audience": "AI应用开发者、企业技术团队、解决方案架构师",
-      "risk": "项目体量庞大，学习曲线较陡，需投入时间掌握其全功能。",
+      "title": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "score": 86,
+      "reason": "让AI直接操控浏览器的开源库，支持自动化网页操作和代理任务，实用性强，适合构建自主网络代理。",
+      "audience": "面向需要构建自动化浏览器代理的开发者，尤其是从事RPA和智能助手领域的团队。",
+      "risk": "项目更新快速，API可能频繁变动；浏览器自动化可能受网站反爬限制，需注意合规性。",
       "source": "GitHub Search",
       "signals": [
-        "152861 stars",
+        "109705 stars",
         "topic: llm"
       ]
     },
     {
       "rank": 2,
-      "title": "huggingface/transformers",
-      "url": "https://github.com/huggingface/transformers",
-      "score": 91,
-      "reason": "最主流的预训练模型库，支持数千种模型和任务，API统一，生态完善。是AI开发者的基础工具，实用价值极高。",
-      "audience": "机器学习工程师、研究人员、AI产品开发者",
-      "risk": "资源消耗大，需根据任务选择合适模型，避免过度使用。",
+      "title": "topoteretes/cognee",
+      "url": "https://github.com/topoteretes/cognee",
+      "score": 82,
+      "reason": "将RAG与记忆管理结合的开源框架，提供知识图谱和向量存储的集成方案，有助于增强LLM的长时记忆和上下文理解。",
+      "audience": "适合希望为AI应用增加持久记忆和知识关联的开发者，尤其对构建个性化助手或知识库系统的人。",
+      "risk": "项目处于早期阶段，文档可能不完善，且与现有RAG工具链的兼容性需要测试。",
       "source": "GitHub Search",
       "signals": [
-        "164234 stars",
-        "topic: llm"
+        "30114 stars",
+        "topic: vector-db"
       ]
     },
     {
       "rank": 3,
-      "title": "mem0ai/mem0",
-      "url": "https://github.com/mem0ai/mem0",
-      "score": 88,
-      "reason": "为AI Agent提供长期记忆层的开源方案，支持多种向量数据库，易于集成，可显著提升Agent的上下文理解能力，是当前热门方向。",
-      "audience": "Agent开发者、RAG系统构建者、智能问答产品团队",
-      "risk": "项目较新，API可能变动，需关注版本更新。",
+      "title": "CherryHQ/cherry-studio",
+      "url": "https://github.com/CherryHQ/cherry-studio",
+      "score": 82,
+      "reason": "一款面向多LLM的桌面客户端，支持多种模型管理和本地优先，提供直观的界面用于对话和工具调用，提升开发调试效率。",
+      "audience": "面向需要同时管理多个AI模型（如Claude、GPT）的开发者，以及普通用户希望高效使用大语言模型场景。",
+      "risk": "桌面应用维护成本高，可能依赖特定平台，且非官方工具存在安全隐私需自行评估。",
       "source": "GitHub Search",
       "signals": [
-        "63560 stars",
-        "topic: rag"
+        "50754 stars",
+        "topic: ai-agent"
       ]
     },
     {
       "rank": 4,
-      "title": "browser-use/browser-use",
-      "url": "https://github.com/browser-use/browser-use",
-      "score": 87,
-      "reason": "让AI通过自然语言控制浏览器，实现自动化操作，如数据抓取、表单填写等。对构建浏览器Agent或自动化测试极具实用价值。",
-      "audience": "RPA开发者、自动化测试工程师、网页数据采集人员",
-      "risk": "依赖浏览器环境，可能受页面结构变化影响，且需要关注安全权限。",
+      "title": "mem0ai/mem0",
+      "url": "https://github.com/mem0ai/mem0",
+      "score": 82,
+      "reason": "开源AI记忆层，为LLM应用提供一致的记忆存储和检索接口，简单易用，适合给任何智能体添加长期记忆能力。",
+      "audience": "需要为聊天机器人和Agent增加记忆功能的开发者，尤其是想快速实现个性化交互的团队。",
+      "risk": "记忆持久化的策略可能影响数据隐私，需确认数据存储位置和方式是否符合法规。",
       "source": "GitHub Search",
       "signals": [
-        "109670 stars",
-        "topic: llm"
+        "63586 stars",
+        "topic: rag"
       ]
     },
     {
       "rank": 5,
-      "title": "shareAI-lab/learn-claude-code",
-      "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "score": 85,
-      "reason": "系统学习Claude Code的教程仓库，涵盖原理、安装、使用和最佳实践，对开发者快速掌握AI编程助手很有帮助。",
-      "audience": "使用Claude Code的程序员、AI编程工具学习者",
-      "risk": "教程内容可能随Claude Code更新而滞后，需对照官方文档使用。",
-      "source": "GitHub Search",
+      "title": "mukul975/Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "score": 86,
+      "reason": "GitHub Trending中快速获得关注，聚焦将Anthropic模型用于网络安全任务，提供实用的技能包和示例，具备前瞻性。",
+      "audience": "面向网络安全领域的技术人员，特别是希望利用AI辅助漏洞分析、安全自动化的人。",
+      "risk": "项目刚起步，依赖Anthropic的API，可能受限于访问权限和成本，且安全场景需谨慎验证。",
+      "source": "GitHub Trending",
       "signals": [
-        "74602 stars",
-        "topic: ai-agent"
+        "730 stars today",
+        "Python"
       ]
     }
   ],
   "candidates": [
-    {
-      "title": "santifer/career-ops",
-      "url": "https://github.com/santifer/career-ops",
-      "source": "GitHub Search",
-      "sourceScore": 18,
-      "freshnessScore": 16,
-      "relevanceScore": 32,
-      "popularityScore": 24,
-      "details": [
-        "65374 stars",
-        "topic: ai-agent"
-      ],
-      "totalScore": 90,
-      "ruleReason": "GitHub Search - 65374 stars - high AI/Agent match"
-    },
     {
       "title": "langgenius/dify",
       "url": "https://github.com/langgenius/dify",
@@ -99,26 +84,11 @@
       "relevanceScore": 32,
       "popularityScore": 24,
       "details": [
-        "152861 stars",
+        "152890 stars",
         "topic: llm"
       ],
       "totalScore": 90,
-      "ruleReason": "GitHub Search - 152861 stars - high AI/Agent match"
-    },
-    {
-      "title": "headroomlabs-ai/headroom",
-      "url": "https://github.com/headroomlabs-ai/headroom",
-      "source": "GitHub Search",
-      "sourceScore": 18,
-      "freshnessScore": 16,
-      "relevanceScore": 32,
-      "popularityScore": 24,
-      "details": [
-        "66816 stars",
-        "topic: rag"
-      ],
-      "totalScore": 90,
-      "ruleReason": "GitHub Search - 66816 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 152890 stars - high AI/Agent match"
     },
     {
       "title": "langchain4j/langchain4j",
@@ -129,11 +99,11 @@
       "relevanceScore": 32,
       "popularityScore": 24,
       "details": [
-        "12903 stars",
+        "12905 stars",
         "topic: vector-db"
       ],
       "totalScore": 90,
-      "ruleReason": "GitHub Search - 12903 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 12905 stars - high AI/Agent match"
     },
     {
       "title": "neuml/txtai",
@@ -149,6 +119,36 @@
       ],
       "totalScore": 90,
       "ruleReason": "GitHub Search - 12892 stars - high AI/Agent match"
+    },
+    {
+      "title": "santifer/career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "source": "GitHub Search",
+      "sourceScore": 18,
+      "freshnessScore": 16,
+      "relevanceScore": 32,
+      "popularityScore": 24,
+      "details": [
+        "65413 stars",
+        "topic: ai-agent"
+      ],
+      "totalScore": 90,
+      "ruleReason": "GitHub Search - 65413 stars - high AI/Agent match"
+    },
+    {
+      "title": "headroomlabs-ai/headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "source": "GitHub Search",
+      "sourceScore": 18,
+      "freshnessScore": 16,
+      "relevanceScore": 32,
+      "popularityScore": 24,
+      "details": [
+        "66847 stars",
+        "topic: rag"
+      ],
+      "totalScore": 90,
+      "ruleReason": "GitHub Search - 66847 stars - high AI/Agent match"
     },
     {
       "title": "mukul975/Anthropic-Cybersecurity-Skills",
@@ -174,11 +174,11 @@
       "relevanceScore": 28,
       "popularityScore": 24,
       "details": [
-        "109670 stars",
+        "109705 stars",
         "topic: llm"
       ],
       "totalScore": 86,
-      "ruleReason": "GitHub Search - 109670 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 109705 stars - high AI/Agent match"
     },
     {
       "title": "Graphify-Labs/graphify",
@@ -189,11 +189,11 @@
       "relevanceScore": 28,
       "popularityScore": 24,
       "details": [
-        "107992 stars",
+        "108102 stars",
         "topic: llm"
       ],
       "totalScore": 86,
-      "ruleReason": "GitHub Search - 107992 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 108102 stars - high AI/Agent match"
     },
     {
       "title": "Shubhamsaboo/awesome-llm-apps",
@@ -204,11 +204,11 @@
       "relevanceScore": 28,
       "popularityScore": 24,
       "details": [
-        "133151 stars",
+        "133188 stars",
         "topic: rag"
       ],
       "totalScore": 86,
-      "ruleReason": "GitHub Search - 133151 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 133188 stars - high AI/Agent match"
     },
     {
       "title": "Eigenwise/atomic-agents",
@@ -217,13 +217,13 @@
       "sourceScore": 18,
       "freshnessScore": 16,
       "relevanceScore": 28,
-      "popularityScore": 22.74845949400296,
+      "popularityScore": 22.748880696120004,
       "details": [
-        "6185 stars",
+        "6186 stars",
         "topic: llm-model"
       ],
       "totalScore": 85,
-      "ruleReason": "GitHub Search - 6185 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 6186 stars - high AI/Agent match"
     },
     {
       "title": "akitaonrails/ai-memory",
@@ -286,51 +286,6 @@
       "ruleReason": "GitHub Search - 1790 stars - high AI/Agent match"
     },
     {
-      "title": "CherryHQ/cherry-studio",
-      "url": "https://github.com/CherryHQ/cherry-studio",
-      "source": "GitHub Search",
-      "sourceScore": 18,
-      "freshnessScore": 16,
-      "relevanceScore": 24,
-      "popularityScore": 24,
-      "details": [
-        "50742 stars",
-        "topic: ai-agent"
-      ],
-      "totalScore": 82,
-      "ruleReason": "GitHub Search - 50742 stars - high AI/Agent match"
-    },
-    {
-      "title": "HKUDS/nanobot",
-      "url": "https://github.com/HKUDS/nanobot",
-      "source": "GitHub Search",
-      "sourceScore": 18,
-      "freshnessScore": 16,
-      "relevanceScore": 24,
-      "popularityScore": 24,
-      "details": [
-        "47157 stars",
-        "topic: ai-agent"
-      ],
-      "totalScore": 82,
-      "ruleReason": "GitHub Search - 47157 stars - high AI/Agent match"
-    },
-    {
-      "title": "esengine/DeepSeek-Reasonix",
-      "url": "https://github.com/esengine/DeepSeek-Reasonix",
-      "source": "GitHub Search",
-      "sourceScore": 18,
-      "freshnessScore": 16,
-      "relevanceScore": 24,
-      "popularityScore": 24,
-      "details": [
-        "34802 stars",
-        "topic: ai-agent"
-      ],
-      "totalScore": 82,
-      "ruleReason": "GitHub Search - 34802 stars - high AI/Agent match"
-    },
-    {
       "title": "affaan-m/ECC",
       "url": "https://github.com/affaan-m/ECC",
       "source": "GitHub Search",
@@ -339,11 +294,11 @@
       "relevanceScore": 24,
       "popularityScore": 24,
       "details": [
-        "241010 stars",
+        "241056 stars",
         "topic: llm"
       ],
       "totalScore": 82,
-      "ruleReason": "GitHub Search - 241010 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 241056 stars - high AI/Agent match"
     },
     {
       "title": "huggingface/transformers",
@@ -354,56 +309,11 @@
       "relevanceScore": 24,
       "popularityScore": 24,
       "details": [
-        "164234 stars",
+        "164250 stars",
         "topic: llm"
       ],
       "totalScore": 82,
-      "ruleReason": "GitHub Search - 164234 stars - high AI/Agent match"
-    },
-    {
-      "title": "thedotmack/claude-mem",
-      "url": "https://github.com/thedotmack/claude-mem",
-      "source": "GitHub Search",
-      "sourceScore": 18,
-      "freshnessScore": 16,
-      "relevanceScore": 24,
-      "popularityScore": 24,
-      "details": [
-        "91184 stars",
-        "topic: rag"
-      ],
-      "totalScore": 82,
-      "ruleReason": "GitHub Search - 91184 stars - high AI/Agent match"
-    },
-    {
-      "title": "mem0ai/mem0",
-      "url": "https://github.com/mem0ai/mem0",
-      "source": "GitHub Search",
-      "sourceScore": 18,
-      "freshnessScore": 16,
-      "relevanceScore": 24,
-      "popularityScore": 24,
-      "details": [
-        "63560 stars",
-        "topic: rag"
-      ],
-      "totalScore": 82,
-      "ruleReason": "GitHub Search - 63560 stars - high AI/Agent match"
-    },
-    {
-      "title": "FlowiseAI/Flowise",
-      "url": "https://github.com/FlowiseAI/Flowise",
-      "source": "GitHub Search",
-      "sourceScore": 18,
-      "freshnessScore": 16,
-      "relevanceScore": 24,
-      "popularityScore": 24,
-      "details": [
-        "55380 stars",
-        "topic: rag"
-      ],
-      "totalScore": 82,
-      "ruleReason": "GitHub Search - 55380 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 164250 stars - high AI/Agent match"
     },
     {
       "title": "topoteretes/cognee",
@@ -414,11 +324,11 @@
       "relevanceScore": 24,
       "popularityScore": 24,
       "details": [
-        "30113 stars",
+        "30114 stars",
         "topic: vector-db"
       ],
       "totalScore": 82,
-      "ruleReason": "GitHub Search - 30113 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 30114 stars - high AI/Agent match"
     },
     {
       "title": "lancedb/lancedb",
@@ -429,11 +339,11 @@
       "relevanceScore": 24,
       "popularityScore": 24,
       "details": [
-        "11188 stars",
+        "11190 stars",
         "topic: vector-db"
       ],
       "totalScore": 82,
-      "ruleReason": "GitHub Search - 11188 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 11190 stars - high AI/Agent match"
     },
     {
       "title": "databendlabs/databend",
@@ -451,6 +361,111 @@
       "ruleReason": "GitHub Search - 9414 stars - high AI/Agent match"
     },
     {
+      "title": "CherryHQ/cherry-studio",
+      "url": "https://github.com/CherryHQ/cherry-studio",
+      "source": "GitHub Search",
+      "sourceScore": 18,
+      "freshnessScore": 16,
+      "relevanceScore": 24,
+      "popularityScore": 24,
+      "details": [
+        "50754 stars",
+        "topic: ai-agent"
+      ],
+      "totalScore": 82,
+      "ruleReason": "GitHub Search - 50754 stars - high AI/Agent match"
+    },
+    {
+      "title": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "source": "GitHub Search",
+      "sourceScore": 18,
+      "freshnessScore": 16,
+      "relevanceScore": 24,
+      "popularityScore": 24,
+      "details": [
+        "47166 stars",
+        "topic: ai-agent"
+      ],
+      "totalScore": 82,
+      "ruleReason": "GitHub Search - 47166 stars - high AI/Agent match"
+    },
+    {
+      "title": "esengine/DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "source": "GitHub Search",
+      "sourceScore": 18,
+      "freshnessScore": 16,
+      "relevanceScore": 24,
+      "popularityScore": 24,
+      "details": [
+        "34837 stars",
+        "topic: ai-agent"
+      ],
+      "totalScore": 82,
+      "ruleReason": "GitHub Search - 34837 stars - high AI/Agent match"
+    },
+    {
+      "title": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "source": "GitHub Search",
+      "sourceScore": 18,
+      "freshnessScore": 16,
+      "relevanceScore": 24,
+      "popularityScore": 24,
+      "details": [
+        "91210 stars",
+        "topic: rag"
+      ],
+      "totalScore": 82,
+      "ruleReason": "GitHub Search - 91210 stars - high AI/Agent match"
+    },
+    {
+      "title": "mem0ai/mem0",
+      "url": "https://github.com/mem0ai/mem0",
+      "source": "GitHub Search",
+      "sourceScore": 18,
+      "freshnessScore": 16,
+      "relevanceScore": 24,
+      "popularityScore": 24,
+      "details": [
+        "63586 stars",
+        "topic: rag"
+      ],
+      "totalScore": 82,
+      "ruleReason": "GitHub Search - 63586 stars - high AI/Agent match"
+    },
+    {
+      "title": "FlowiseAI/Flowise",
+      "url": "https://github.com/FlowiseAI/Flowise",
+      "source": "GitHub Search",
+      "sourceScore": 18,
+      "freshnessScore": 16,
+      "relevanceScore": 24,
+      "popularityScore": 24,
+      "details": [
+        "55379 stars",
+        "topic: rag"
+      ],
+      "totalScore": 82,
+      "ruleReason": "GitHub Search - 55379 stars - high AI/Agent match"
+    },
+    {
+      "title": "ScrapeGraphAI/Scrapegraph-ai",
+      "url": "https://github.com/ScrapeGraphAI/Scrapegraph-ai",
+      "source": "GitHub Search",
+      "sourceScore": 18,
+      "freshnessScore": 16,
+      "relevanceScore": 20,
+      "popularityScore": 24,
+      "details": [
+        "29722 stars",
+        "topic: llm-model"
+      ],
+      "totalScore": 78,
+      "ruleReason": "GitHub Search - 29722 stars - high AI/Agent match"
+    },
+    {
       "title": "NousResearch/hermes-agent",
       "url": "https://github.com/NousResearch/hermes-agent",
       "source": "GitHub Search",
@@ -459,71 +474,56 @@
       "relevanceScore": 20,
       "popularityScore": 24,
       "details": [
-        "232660 stars",
-        "topic: ai-agent"
+        "232777 stars",
+        "topic: llm"
       ],
       "totalScore": 78,
-      "ruleReason": "GitHub Search - 232660 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 232777 stars - high AI/Agent match"
     },
     {
-      "title": "shareAI-lab/learn-claude-code",
-      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "title": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
       "source": "GitHub Search",
       "sourceScore": 18,
       "freshnessScore": 16,
       "relevanceScore": 20,
       "popularityScore": 24,
       "details": [
-        "74602 stars",
-        "topic: ai-agent"
+        "178943 stars",
+        "topic: llm"
       ],
       "totalScore": 78,
-      "ruleReason": "GitHub Search - 74602 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 178943 stars - high AI/Agent match"
     },
     {
-      "title": "thedaviddias/Front-End-Checklist",
-      "url": "https://github.com/thedaviddias/Front-End-Checklist",
+      "title": "open-webui/open-webui",
+      "url": "https://github.com/open-webui/open-webui",
       "source": "GitHub Search",
       "sourceScore": 18,
       "freshnessScore": 16,
       "relevanceScore": 20,
       "popularityScore": 24,
       "details": [
-        "73563 stars",
-        "topic: ai-agent"
+        "149214 stars",
+        "topic: llm"
       ],
       "totalScore": 78,
-      "ruleReason": "GitHub Search - 73563 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 149214 stars - high AI/Agent match"
     },
     {
-      "title": "ZhuLinsen/daily_stock_analysis",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "title": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
       "source": "GitHub Search",
       "sourceScore": 18,
       "freshnessScore": 16,
       "relevanceScore": 20,
       "popularityScore": 24,
       "details": [
-        "63318 stars",
-        "topic: ai-agent"
+        "144541 stars",
+        "topic: llm"
       ],
       "totalScore": 78,
-      "ruleReason": "GitHub Search - 63318 stars - high AI/Agent match"
-    },
-    {
-      "title": "zhayujie/CowAgent",
-      "url": "https://github.com/zhayujie/CowAgent",
-      "source": "GitHub Search",
-      "sourceScore": 18,
-      "freshnessScore": 16,
-      "relevanceScore": 20,
-      "popularityScore": 24,
-      "details": [
-        "46558 stars",
-        "topic: ai-agent"
-      ],
-      "totalScore": 78,
-      "ruleReason": "GitHub Search - 46558 stars - high AI/Agent match"
+      "ruleReason": "GitHub Search - 144541 stars - high AI/Agent match"
     }
   ]
 }
