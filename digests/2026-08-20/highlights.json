@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 社区呼吁支持 AGENTS.md，获 4669 赞成票",
+      "Codex 与 Qwen Code 修复 Git 命令安全边界问题",
+      "OpenCode Go 订阅计费遭集中质疑，单日 3 起",
+      "Pi 修复内存泄漏，Windows 追踪帖 31 评论活跃",
+      "Qwen Code v0.21.14 发布，P1 级 Bug 被集中反馈",
+      "Gemini CLI 发布 v0.57.0，子代理可靠性成焦点"
+    ],
+    "ai-agents": [
+      "OpenClaw 日 Issue 与 PR 均达 500 上限，开发密集",
+      "v2026.8.1-beta.2 被曝引入回归，建议谨慎升级",
+      "安全功能：安装策略警告现需操作员确认",
+      "ClawSweeper 机器人已介入 Issue 分类与 PR 生成",
+      "P0 级数据丢失问题仍悬而未决，项目健康隐忧",
+      "Discord 投票消息修复，恢复标准投递管线"
+    ],
+    "ai-trending": [
+      "MoneyPrinterTurbo 今日新增 2221 stars，高居榜首",
+      "Agent Skills 生态爆发，三个技能项目同登榜",
+      "OpenViking 首日获 804 stars，本地优先新宠",
+      "omlx 专为 Apple Silicon 打造，首日 472 stars",
+      "AutoGPT 持续迭代，稳居 Agent 框架头部",
+      "browser-use 等项目受关注，Agent 工具链演进"
+    ],
+    "ai-web": [
+      "Anthropic 发布文本水印技术细节，应对欧盟 AI 法案",
+      "Claude Sonnet 5 发布，主打更强智能体与性价比",
+      "Claude Opus 5 性能逼近 Fable 5，价格减半",
+      "OpenAI 聚焦前沿模型网络能力与可信分发",
+      "GPT-5.6 发布信息被仅元数据模式捕捉",
+      "Anthropic 揭示多智能体系统的新兴安全风险"
+    ],
+    "ai-hn": [
+      "HN 热议 Opus 5.0 输出不连贯，高赞 167",
+      "Claude Code 支持 AGENTS.md 呼声强烈，126 分",
+      "OpenAI CFO 放话 IPO，商业化与安全治理遭质疑",
+      "论文挑战思维链浪漫化解读，引发立场分歧",
+      "Launch HN: OneCLI 开源沙箱 Agent 工具引关注",
+      "AI 黑客攻击后放缓训练，OpenAI 安全策略受审视"
+    ],
+    "ai-arxiv": [
+      "自改进智能体脆弱性研究：首个系统分析揭示风险",
+      "TokEval 提出首个系统化 tokenizer 评估套件",
+      "不确定性门控判定策略为 LLM 裁判提供风险保证",
+      "表格基础模型泛化能力获理论新视角",
+      "作者验证基准覆盖 AI 写作漂移，揭示失效模式",
+      "GPT 风格模型在符号音乐上坐标系错配"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B 以 11.4k 周点赞稳居 HF 榜首",
+      "MiniMax-H3 单周下载超 305 万，成视频生成标准",
+      "DeepSeek-V4-Flash 下载量破 233 万，主力部署版",
+      "Kimi-K3 压缩大模型掀新趋势，点赞破万",
+      "Meta 新模型 Muse-Glimmer-30B 迅速上榜引关注",
+      "Qwen3.8-2.4T-A95B 超大规模 MoE 版本亮相"
+    ],
+    "ai-community": [
+      "Dev.to 热议 LLM 账单，成本审计成高频话题",
+      "Agent 记忆权限缺失被认为是落地主要瓶颈",
+      "Lobste.rs 调查：珍本书籍流向 AI 训练设施引热议",
+      "测试 5 大 AI 引擎，内容可见性判断完全不一致",
+      "Prompt 缓存实战：可削减 70-90% LLM 账单",
+      "Qwen3.8-27B 深度解析登 Dev.to 热门"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code hits v2.1.237; AGENTS.md issue hits 4,669 👍",
+      "OpenAI Codex rust v0.149.0-alpha.2 focuses on security",
+      "Gemini CLI active; Windows support remains a pain point",
+      "OpenCode, Pi, Qwen Code lead open-source CLI niches",
+      "Multi-agent orchestration and reliability are top focus",
+      "Cross-tool standardization pressure mounting across ecosystem"
+    ],
+    "ai-agents": [
+      "OpenClaw faces triage bottleneck with 466 open issues",
+      "No new releases; stabilization release critically needed",
+      "High P0/P1 issues tagged for maintainer review",
+      "500 PRs updated; 422 remain open in 24 hours",
+      "Backlog dominated by data-loss and regression concerns",
+      "Community active but maintainers struggle with queue"
+    ],
+    "ai-trending": [
+      "Agent 'skills' frameworks explode with 3 top repos",
+      "Anthropic-Cybersecurity-Skills offers 817 CVE-mapped skills",
+      "MoneyPrinterTurbo gains +2,221 stars in one day",
+      "OpenViking emerges as self-evolving context database",
+      "ollama cements position as local model OS at 178,984 stars",
+      "vllm powers production serving at 89,474 stars"
+    ],
+    "ai-web": [
+      "Claude designs protein binders with 22-35% success",
+      "OpenAI announces GPT-5.6 and Zero Data Retention",
+      "Both firms race to lead AI cybersecurity defense",
+      "Anthropic performs complex chemical analysis in 25 min",
+      "OpenAI expands Daybreak cyber defense program",
+      "Anthropic publishes multiagent system risk findings"
+    ],
+    "ai-hn": [
+      "Opus 5.0 incoherence bug report tops HN at 167 points",
+      "AGENTS.md feature request finally gains traction",
+      "OpenAI CFO confirms 2027 IPO timeline or sooner",
+      "Anthropic's first profitable quarter sparks excitement",
+      "BBC: OpenAI slows training after model allegedly hacked",
+      "Community split on frontier model stability"
+    ],
+    "ai-arxiv": [
+      "Paper examines fragility of memory-based self-improving agents",
+      "New recurrent architecture defers compression decisions",
+      "Recirculation boosts accuracy with no added latency",
+      "Research on sampling-verification gaps in code world models",
+      "Hybrid LLM-RL framework formalized in new paper",
+      "LLM adoption in radiology with QA mechanisms"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B base model surpasses 11,000 likes",
+      "Kimi-K3 surprises with 10,853 likes, efficiency-first design",
+      "DeepSeek-V4-Flash-0731 hits 2.33M downloads",
+      "MiniMax-H3 pushes video generation with Comfy-Org",
+      "Qwen3.8-2.4T-A95B trending as MoE flagship",
+      "DeepSeek V4 Pro and Flash maintain steady momentum"
+    ],
+    "ai-community": [
+      "2-token prompt generates 39,966-token bill, sparking cost debate",
+      "Rare books found at Amazon AI training facility (55 pts)",
+      "Claude Code session recommends giving up, dev shares story",
+      "5 AI engines disagree on same website's SEO assessment",
+      "Agent memory authority bug explored in popular post",
+      "Prompt caching and routing claim 60-90% savings"
+    ]
+  }
+}
