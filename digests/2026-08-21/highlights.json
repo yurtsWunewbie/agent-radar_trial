@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code 单 Issue 评论破百，社区声量遥遥领先",
+      "OpenAI Codex 高频迭代，发布 rust-v0.149.0 版本",
+      "Gemini CLI 与 Qwen Code 依托大厂资源快速追赶",
+      "跨会话记忆与远程控制成 CLI 工具下一竞争焦点",
+      "Kimi Code CLI 活跃度最低，仍处早期阶段",
+      "各工具功能趋同，稳定性与合规成决胜关键"
+    ],
+    "ai-agents": [
+      "OpenClaw 今日 500 Issue 与 500 PR，社区异常活跃",
+      "P0 级崩溃回归 #108435 需重点关注",
+      "SQLite 快照一致性与消息投递可靠性成治理主线",
+      "v2026.8.1-beta.2 发布验证进行中，无新版本",
+      "Claude CLI OAuth 重启后丢失刷新所有权问题已修复",
+      "Control UI 安装策略警告审查界面全链路完成"
+    ],
+    "ai-trending": [
+      "MoneyPrinterTurbo 单日新增 2761 星，短视频赛道火热",
+      "腾讯 AI-Infra-Guard 推全栈 AI 红队平台，安全工具化",
+      "给 Agent 装记忆成刚需，多项目上榜",
+      "caveman 用原始人语省 65% token 成流量密码",
+      "cursor/plugins 官方规范发布，编辑器生态标准化",
+      "技能包项目疯狂吸星，Agent 焦点从框架转向技能"
+    ],
+    "ai-web": [
+      "Anthropic 发布蛋白质设计新研究，成功率超行业两倍",
+      "Claude Opus 5 仅凭原始数据 20 分钟完成化学分析",
+      "Anthropic 首次在官方研究提及 Mythos Preview 模型",
+      "Claude 正从文本处理向读懂仪器数据跨越",
+      "蛋白质结合物设计 15 个靶点攻克 14 个",
+      "OpenAI 今日无新内容发布，处于静默期"
+    ],
+    "ai-hn": [
+      "Huzzah 提出 AI 编程新范式，引社区 115 条激辩",
+      "Vomit 项目用独立 LLM 清理 Claude 输出，直击痛点",
+      "27 美元智能手表运行 Claude，低成本硬件 Hack 走红",
+      "OpenRouter 现匿名模型 Stealth，引社区猜测",
+      "欧盟 AI 知识产权裁决讨论保持热度",
+      "社区情绪在生产力革命与失控风险间摇摆"
+    ],
+    "ai-arxiv": [
+      "新研究提出自适应推理预算，解决固定 token 浪费",
+      "EchoCoT 首次系统研究从黑盒模型提取隐藏思维链",
+      "流匹配偏好优化揭示奖励黑客根本原因——流形漂移",
+      "MemTrapBench 首次评测 LLM 记忆使用中的认知陷阱",
+      "最优技能选择方法提供首个双准则理论保证",
+      "恶意技能检测基准 MaliciousSkillBench 发布"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B 周点赞破万，衍生庞大生态",
+      "MiniMax-H3 视频模型下载超 330 万，社区微调活跃",
+      "Moonshot AI 发布 Kimi-K3，点赞超 1 万",
+      "DeepSeek 双版本同日上榜，或暗示架构迭代",
+      "Meta 发布 Muse-Glimmer-30B 多模态模型，下载超 47 万",
+      "DeepSeek-V4-Flash 下载超 254 万，社区采用率极高"
+    ],
+    "ai-community": [
+      "测试通过但提示注入仍生效，揭示测试方法论缺陷",
+      "Claude Code 为遗留代码库补齐 1200 个测试",
+      "RAG 管道检索文本成攻击向量，引发安全警示",
+      "AI 智能体无法预判操作影响范围，DevOps 需警惕",
+      "仓库级符号索引从 30 秒降至 98 毫秒的优化实战",
+      "单用户 MCP 内存服务器 6 周构建实录引热议"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Ecosystem converging on MCP, sessions, subagents",
+      "Model quality regressions top community complaints",
+      "Windows reliability gaps still a major issue",
+      "Security hardening accelerating across all tools",
+      "Cross-tool UX expectations challenge established norms",
+      "Provider gateways require per-tool compat layers"
+    ],
+    "ai-agents": [
+      "OpenClaw stable at 469 issues, 359 open PRs",
+      "Late-beta stabilization for v2026.8.1 release line",
+      "P0/P1 regressions actively addressed by maintainers",
+      "Top 50 issues average 7+ comments each",
+      "PR #116489 adds plugin/skill security boundary",
+      "No new releases in last 24 hours"
+    ],
+    "ai-trending": [
+      "Agent Skills and memory systems dominate trending",
+      "Token reduction tools cut LLM costs",
+      "Mojo language gains traction for AI-native compute",
+      "Local-first agent infrastructure exploding in popularity",
+      "Tencent AI-Infra-Guard boosts AI red-teaming",
+      "New vector DB turbovec attracts 230 stars today"
+    ],
+    "ai-web": [
+      "Claude designs protein binders at 22-35% success",
+      "Claude outpaces typical 10-15% protein design rate",
+      "Opus 5 analyzes lab data in under 25 minutes",
+      "Matches lab purity: 96.4% vs 96.33%",
+      "Anthropic pivots to specialized research positioning",
+      "OpenAI has no new content in today's crawl"
+    ],
+    "ai-hn": [
+      "Huzzah offers novel AI coding approach",
+      "Vomit cleans up Claude 5 output with LLM",
+      "Community debates LLM-generated code review",
+      "Anthropic's IPO ambitions spark discussion",
+      "Rogue AI agent reports raise safety concerns",
+      "Developers focus on reliability over 'wow'"
+    ],
+    "ai-arxiv": [
+      "Adaptive test-time compute allocation research emerges",
+      "Agentic skill selection frameworks push boundaries",
+      "Chain-of-thought extraction from proprietary models",
+      "Compute-efficient MoE hyperparameter transfer",
+      "CPU-first SLM challenges deployment constraints",
+      "Legal AI and financial compliance applications expand"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 11.7K likes",
+      "Kimi-K3 emerges with 10.9K likes",
+      "MiniMax-H3 leads video generation",
+      "Eight abliterated Qwen3.8 variants in top 30",
+      "DeepSeek-V4 line shows sustained traction",
+      "Community quantizations flood Qwen3.8 ecosystem"
+    ],
+    "ai-community": [
+      "Prompt injection test passes but attack works",
+      "RAG pipeline hijacked by retrieved text",
+      "Backfilling thousands of tests via Claude Code",
+      "Trust metrics lack proper denominators",
+      "Symbol indexing optimized from 30s to 98ms",
+      "Rewriting Python agent frameworks in Go"
+    ]
+  }
+}
