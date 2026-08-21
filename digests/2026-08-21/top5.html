@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agents Radar Top 5 - 2026-08-21</title>
+  <style>
+    :root { --bg:#f6f7fb; --panel:#fff; --ink:#172033; --muted:#667085; --line:#dfe4ee; --blue:#245fd3; --green:#13795b; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Microsoft YaHei", sans-serif; line-height:1.55; }
+    main { width:min(1040px, calc(100vw - 28px)); margin:0 auto; padding:28px 0 44px; }
+    header { display:flex; justify-content:space-between; gap:16px; align-items:flex-end; margin-bottom:18px; }
+    h1 { margin:0 0 6px; font-size:clamp(28px, 5vw, 46px); line-height:1.08; letter-spacing:0; }
+    .meta { color:var(--muted); margin:0; }
+    .badge { border:1px solid var(--line); background:var(--panel); border-radius:999px; padding:6px 12px; color:var(--muted); white-space:nowrap; }
+    .grid { display:grid; gap:12px; }
+    .pick { display:grid; grid-template-columns:64px 1fr; gap:14px; padding:16px; background:var(--panel); border:1px solid var(--line); border-radius:10px; box-shadow:0 10px 26px rgba(23,32,51,.06); }
+    .score { width:56px; height:56px; border-radius:10px; display:grid; place-items:center; background:#eef6f2; color:var(--green); font-size:20px; font-weight:800; }
+    .title { color:var(--blue); font-size:19px; font-weight:800; text-decoration:none; word-break:break-word; }
+    .why { margin:7px 0 12px; font-size:15px; }
+    dl { margin:0; display:grid; gap:7px; }
+    dl div { display:grid; grid-template-columns:86px 1fr; gap:8px; }
+    dt { color:var(--muted); font-weight:700; }
+    dd { margin:0; }
+    h2 { margin:28px 0 10px; font-size:20px; }
+    .table-wrap { overflow:auto; background:var(--panel); border:1px solid var(--line); border-radius:10px; }
+    table { width:100%; border-collapse:collapse; min-width:760px; }
+    th, td { padding:10px 12px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { color:var(--muted); font-size:13px; }
+    td:first-child, td:nth-child(2) { width:58px; font-weight:700; }
+    footer { margin-top:22px; color:var(--muted); font-size:13px; }
+    @media (max-width: 680px) { main { width:min(100vw - 20px, 1040px); padding-top:18px; } header { display:block; } .badge { display:inline-block; margin-top:12px; } .pick { grid-template-columns:50px 1fr; padding:13px; } .score { width:44px; height:44px; font-size:17px; } .title { font-size:17px; } dl div { grid-template-columns:1fr; gap:0; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Agents Radar Top 5</h1>
+        <p class="meta">2026-08-21 · 30 candidates · LLM reranked</p>
+      </div>
+      <span class="badge">GMT+8 18:00 daily radar</span>
+    </header>
+    <section class="grid">
+    <article class="pick">
+      <div class="score">90</div>
+      <div>
+        <a class="title" href="https://github.com/langgenius/dify" target="_blank" rel="noreferrer">1. langgenius/dify</a>
+        <p class="why">一站式LLM应用开发平台，支持可视化编排、RAG、Agent工作流，生产级运维能力成熟，社区活跃，适合快速搭建和部署AI应用</p>
+        <dl>
+          <div><dt>Best for</dt><dd>需要快速构建和部署LLM应用的开发者、产品经理和初创团队</dd></div>
+          <div><dt>Watch out</dt><dd>项目功能丰富但架构较重，小规模场景可能引入不必要的复杂度</dd></div>
+          <div><dt>Signal</dt><dd>GitHub Search · 153107 stars · topic: llm</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="pick">
+      <div class="score">86</div>
+      <div>
+        <a class="title" href="https://github.com/browser-use/browser-use" target="_blank" rel="noreferrer">2. browser-use/browser-use</a>
+        <p class="why">让AI Agent通过自然语言控制浏览器的开源库，自动化网页操作和数据提取，结合Playwright底层实现稳定，交互式任务落地价值高</p>
+        <dl>
+          <div><dt>Best for</dt><dd>希望实现网页自动化、数据采集和端到端AI交互的开发者</dd></div>
+          <div><dt>Watch out</dt><dd>浏览器自动化依赖环境稳定，遇到反爬或动态页面可能需较多调试</dd></div>
+          <div><dt>Signal</dt><dd>GitHub Search · 109951 stars · topic: llm</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="pick">
+      <div class="score">82</div>
+      <div>
+        <a class="title" href="https://github.com/mem0ai/mem0" target="_blank" rel="noreferrer">3. mem0ai/mem0</a>
+        <p class="why">为AI Agent添加长期记忆层的中间件，支持向量存储和混合检索，易于集成到现有LLM流程，解决多轮对话上下文丢失的痛点</p>
+        <dl>
+          <div><dt>Best for</dt><dd>构建需要记忆和个性化服务的聊天机器人、助手类应用的开发者</dd></div>
+          <div><dt>Watch out</dt><dd>记忆管理需关注隐私和数据规模问题，部分功能依赖外部向量数据库</dd></div>
+          <div><dt>Signal</dt><dd>GitHub Search · 63744 stars · topic: rag</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="pick">
+      <div class="score">82</div>
+      <div>
+        <a class="title" href="https://github.com/CherryHQ/cherry-studio" target="_blank" rel="noreferrer">4. CherryHQ/cherry-studio</a>
+        <p class="why">开源的AI桌面客户端，支持多模型聚合、本地知识库和插件系统，界面友好，适合个人高效使用和管理多种AI服务</p>
+        <dl>
+          <div><dt>Best for</dt><dd>需要在桌面端统一调用多模型API、管理提示词和知识库的工程师及内容创作者</dd></div>
+          <div><dt>Watch out</dt><dd>桌面客户端功能和稳定性仍在迭代中，企业级特性较有限</dd></div>
+          <div><dt>Signal</dt><dd>GitHub Search · 50868 stars · topic: ai-agent</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="pick">
+      <div class="score">82</div>
+      <div>
+        <a class="title" href="https://github.com/lancedb/lancedb" target="_blank" rel="noreferrer">5. lancedb/lancedb</a>
+        <p class="why">嵌入式向量数据库，支持多模态数据、规模化检索和零配置部署，性能优秀，可直接嵌入Python/Rust应用降低基础设施复杂度</p>
+        <dl>
+          <div><dt>Best for</dt><dd>需要轻量级向量检索、RAG本地原型开发或边缘部署的数据工程师</dd></div>
+          <div><dt>Watch out</dt><dd>相比云数据库缺少分布式集群管理，超大规模数据场景可能需额外方案</dd></div>
+          <div><dt>Signal</dt><dd>GitHub Search · 11225 stars · topic: vector-db</dd></div>
+        </dl>
+      </div>
+    </article>
+    </section>
+    <h2>30-Candidate Pool</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Score</th><th>Source</th><th>Title</th><th>Signals</th></tr></thead>
+        <tbody>
+      <tr>
+        <td>1</td>
+        <td>90</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/langgenius/dify" target="_blank" rel="noreferrer">langgenius/dify</a></td>
+        <td>153107 stars, topic: llm</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>90</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/headroomlabs-ai/headroom" target="_blank" rel="noreferrer">headroomlabs-ai/headroom</a></td>
+        <td>67051 stars, topic: rag</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>90</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/langchain4j/langchain4j" target="_blank" rel="noreferrer">langchain4j/langchain4j</a></td>
+        <td>12924 stars, topic: vector-db</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>90</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/neuml/txtai" target="_blank" rel="noreferrer">neuml/txtai</a></td>
+        <td>12898 stars, topic: vector-db</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>86</td>
+        <td>GitHub Trending</td>
+        <td><a href="https://github.com/santifer/career-ops" target="_blank" rel="noreferrer">santifer/career-ops</a></td>
+        <td>816 stars today, JavaScript</td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+        <td>86</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/browser-use/browser-use" target="_blank" rel="noreferrer">browser-use/browser-use</a></td>
+        <td>109951 stars, topic: llm</td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td>86</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noreferrer">Graphify-Labs/graphify</a></td>
+        <td>108889 stars, topic: llm</td>
+      </tr>
+
+      <tr>
+        <td>8</td>
+        <td>86</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/Shubhamsaboo/awesome-llm-apps" target="_blank" rel="noreferrer">Shubhamsaboo/awesome-llm-apps</a></td>
+        <td>133434 stars, topic: rag</td>
+      </tr>
+
+      <tr>
+        <td>9</td>
+        <td>85</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/Eigenwise/atomic-agents" target="_blank" rel="noreferrer">Eigenwise/atomic-agents</a></td>
+        <td>6187 stars, topic: llm-model</td>
+      </tr>
+
+      <tr>
+        <td>10</td>
+        <td>82</td>
+        <td>GitHub Trending</td>
+        <td><a href="https://github.com/akitaonrails/ai-memory" target="_blank" rel="noreferrer">akitaonrails/ai-memory</a></td>
+        <td>332 stars today, Rust</td>
+      </tr>
+
+      <tr>
+        <td>11</td>
+        <td>82</td>
+        <td>GitHub Trending</td>
+        <td><a href="https://github.com/PostHog/posthog" target="_blank" rel="noreferrer">PostHog/posthog</a></td>
+        <td>60 stars today, Python</td>
+      </tr>
+
+      <tr>
+        <td>12</td>
+        <td>82</td>
+        <td>GitHub Trending</td>
+        <td><a href="https://github.com/volcengine/OpenViking" target="_blank" rel="noreferrer">volcengine/OpenViking</a></td>
+        <td>950 stars today, Python</td>
+      </tr>
+
+      <tr>
+        <td>13</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noreferrer">affaan-m/ECC</a></td>
+        <td>241581 stars, topic: llm</td>
+      </tr>
+
+      <tr>
+        <td>14</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/huggingface/transformers" target="_blank" rel="noreferrer">huggingface/transformers</a></td>
+        <td>164296 stars, topic: llm</td>
+      </tr>
+
+      <tr>
+        <td>15</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noreferrer">thedotmack/claude-mem</a></td>
+        <td>91397 stars, topic: rag</td>
+      </tr>
+
+      <tr>
+        <td>16</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/mem0ai/mem0" target="_blank" rel="noreferrer">mem0ai/mem0</a></td>
+        <td>63744 stars, topic: rag</td>
+      </tr>
+
+      <tr>
+        <td>17</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/topoteretes/cognee" target="_blank" rel="noreferrer">topoteretes/cognee</a></td>
+        <td>30166 stars, topic: vector-db</td>
+      </tr>
+
+      <tr>
+        <td>18</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/lancedb/lancedb" target="_blank" rel="noreferrer">lancedb/lancedb</a></td>
+        <td>11225 stars, topic: vector-db</td>
+      </tr>
+
+      <tr>
+        <td>19</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/databendlabs/databend" target="_blank" rel="noreferrer">databendlabs/databend</a></td>
+        <td>9420 stars, topic: vector-db</td>
+      </tr>
+
+      <tr>
+        <td>20</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/CherryHQ/cherry-studio" target="_blank" rel="noreferrer">CherryHQ/cherry-studio</a></td>
+        <td>50868 stars, topic: ai-agent</td>
+      </tr>
+
+      <tr>
+        <td>21</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/HKUDS/nanobot" target="_blank" rel="noreferrer">HKUDS/nanobot</a></td>
+        <td>47251 stars, topic: ai-agent</td>
+      </tr>
+
+      <tr>
+        <td>22</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/esengine/DeepSeek-Reasonix" target="_blank" rel="noreferrer">esengine/DeepSeek-Reasonix</a></td>
+        <td>34988 stars, topic: ai-agent</td>
+      </tr>
+
+      <tr>
+        <td>23</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/iOfficeAI/AionUi" target="_blank" rel="noreferrer">iOfficeAI/AionUi</a></td>
+        <td>32167 stars, topic: ai-agent</td>
+      </tr>
+
+      <tr>
+        <td>24</td>
+        <td>82</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/zi-yue-1129/DATAGEN" target="_blank" rel="noreferrer">zi-yue-1129/DATAGEN</a></td>
+        <td>1790 stars, topic: llm-model</td>
+      </tr>
+
+      <tr>
+        <td>25</td>
+        <td>78</td>
+        <td>GitHub Trending</td>
+        <td><a href="https://github.com/mattpocock/skills" target="_blank" rel="noreferrer">mattpocock/skills</a></td>
+        <td>2192 stars today, Shell</td>
+      </tr>
+
+      <tr>
+        <td>26</td>
+        <td>78</td>
+        <td>GitHub Trending</td>
+        <td><a href="https://github.com/Tencent/AI-Infra-Guard" target="_blank" rel="noreferrer">Tencent/AI-Infra-Guard</a></td>
+        <td>50 stars today, Python</td>
+      </tr>
+
+      <tr>
+        <td>27</td>
+        <td>78</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noreferrer">NousResearch/hermes-agent</a></td>
+        <td>233753 stars, topic: llm</td>
+      </tr>
+
+      <tr>
+        <td>28</td>
+        <td>78</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/ollama/ollama" target="_blank" rel="noreferrer">ollama/ollama</a></td>
+        <td>179091 stars, topic: llm</td>
+      </tr>
+
+      <tr>
+        <td>29</td>
+        <td>78</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/open-webui/open-webui" target="_blank" rel="noreferrer">open-webui/open-webui</a></td>
+        <td>149450 stars, topic: llm</td>
+      </tr>
+
+      <tr>
+        <td>30</td>
+        <td>78</td>
+        <td>GitHub Search</td>
+        <td><a href="https://github.com/langchain-ai/langchain" target="_blank" rel="noreferrer">langchain-ai/langchain</a></td>
+        <td>144706 stars, topic: llm</td>
+      </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer>Generated by agents-radar top5.</footer>
+  </main>
+</body>
+</html>
