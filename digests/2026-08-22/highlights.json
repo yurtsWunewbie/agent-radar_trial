@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.239 稳定迭代，133 评论头部 issue 引爆社区热议",
+      "OpenAI Codex 一日五版极速迭代，Rust 重写中但 Release Notes 缺失引不满",
+      "Gemini CLI 稳定推进，P1 bug 密集但评估管线与安全修复持续",
+      "Copilot CLI BYOK 多模型获 27 赞，v1.0.81-7 补丁发布",
+      "Kimi Code 曝 Token 泄漏严重 bug，社区活跃度低但隐患极高",
+      "OpenCode 发布 v1.18.20/21，核心修复密集引关注"
+    ],
+    "ai-agents": [
+      "OpenClaw 今日 1000+ 动态，P0/P1 稳定性问题持续积压",
+      "OpenClaw 无新版本，124 个 PR 合并聚焦修复与安全加固",
+      "OpenClaw 修复 Discord/Telegram 多智能体消息错发边界问题",
+      "OpenClaw 强化插件安装安全策略，需明确确认风险警告",
+      "Web UI 终端转录投影修复，Codex 会话一致性提升",
+      "OpenClaw 健康度评为关注，SQLite 损坏与内存泄漏待解"
+    ],
+    "ai-trending": [
+      "Matt Pocock 的 skills 今日之星，单日暴涨 3362 星引爆 Agent 技能潮",
+      "cursor/plugins 官方插件规范发布，AI 编辑器生态走向标准化",
+      "headroom 压缩工具输出省 20% Token，降本增效代表项目",
+      "Modular 平台单日 +913 星，Mojo 语言融合 Python 与 C 性能",
+      "AI 工程师从零教程 47.5k 星，系统性学习路径受追捧",
+      "Ollama 179k 星领跑本地大模型，AI 民主化持续深化"
+    ],
+    "ai-hn": [
+      "Claudette 让 Claude 去掉 BuzzFeed 味，195 分登顶 HN 热帖",
+      "OpenAI Codex 计费异常 bug 曝光，云集成可靠性引热议",
+      "自托管沙箱化 Agent 软件工厂实践帖 82 分，自主可控受追捧",
+      "LFM2.5-DSpark 推理加速 3.2 倍，从 H100 到 MacB 引关注",
+      "Qwen 3 4B 本地微调实战分享，开源模型落地价值获认可",
+      "开源自托管 Codex 替代方案 Proliferate 亮相 Show HN"
+    ],
+    "ai-arxiv": [
+      "ConceptGuard 首提上下文敏感遗忘基准，揭示现有方法系统性缺陷",
+      "Phantom Gains 审计自改进虚假提升，差分噪声制造幻象",
+      "Evidence Arbitration 研究文本与数字冲突仲裁，关乎金融医疗决策",
+      "InsufficiencyBench 首个法律信息不充分基准，LLM 确定性建议藏隐患",
+      "BERT-LER 面向结构化 EHR 可解释模型，临床预测兼顾透明度",
+      "FormalTCS 基准全流程评估 LLM 科研能力，设数学推理新高标"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B 近 1.2 万周赞登顶，衍生版本霸榜 12 席以上",
+      "Kimi-K3 1.09 万赞紧随其后，多模态理解赛道登顶",
+      "DeepSeek-V4-Flash 下载量 283 万，轻量高效版加速普及",
+      "MiniMax-H3 视频生成下载破 360 万，多模态赛道领衔",
+      "DeepSeek-V4-Pro 对标闭源旗舰，开放权重竞争力强劲",
+      "Qwen3.8-27B 周边形成完整 uncensored 衍生模型矩阵"
+    ],
+    "ai-community": [
+      "157 次真实 Agent 实验证实：失败瓶颈在规划而非执行",
+      "Pi Agent vs OpenCode 百小时实测对比，Anthropic 政策变动影响选型",
+      "15 美元树莓派 Zero 2 W 实现 5.3% RTF 唤醒词检测",
+      "金融 Agent 护栏盲区：护栏无法感知'钱'这一关键上下文",
+      "ReFind 方案挑战 Agent 记忆范式，主张'搜索代替记忆'",
+      "LLM 规划实验可信度 7 项检查清单，避开验证陷阱"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code leads community engagement volume",
+      "OpenAI Codex ships 6 alphas in 24 hours",
+      "Windows support weakest link across all tools",
+      "Focus shifts to session lifecycle and costs",
+      "Claude Code stable v2.1.239 released",
+      "Gemini CLI has 10 open PRs, no release"
+    ],
+    "ai-agents": [
+      "OpenClaw faces 500 issues and PRs",
+      "P0 bugs: memory leaks, session loss",
+      "Gateway memory leak open since June 9",
+      "Codex integration PR #127724 in review",
+      "Steady UI and CLI fixes from maintainers",
+      "No new releases published today"
+    ],
+    "ai-trending": [
+      "Agent harnesses become new application platform",
+      "Graphify hits ~109k stars, vectorless RAG",
+      "Mojo pushes high-performance AI compute",
+      "MoneyPrinterTurbo at 113k stars for AI video",
+      "Cursor plugins spec gains 388 stars today",
+      "Skills and instincts packaging for agents"
+    ],
+    "ai-hn": [
+      "Codex billing and output quality scrutinized",
+      "Community skeptical of AI marketing claims",
+      "Self-hosted coding agents gain interest",
+      "Amazon AI data center raises CO2 concerns",
+      "Nvidia debated as model and harness builder",
+      "Claude Opus 4.6 failed 900/900 agent loops"
+    ],
+    "ai-arxiv": [
+      "Three benchmarks probe AI self-improvement",
+      "Agentic systems mature into real workflows",
+      "InsufficiencyBench tests legal advice gaps",
+      "MemTrapBench exposes cognitive memory traps",
+      "ConceptGuard benchmarks context-sensitive unlearning",
+      "MidTool synthesizes data for agentic tool use"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B hits 11,964 likes, 1.7M downloads",
+      "MiniMax-H3 leads video generation at 3.6M downloads",
+      "Kimi-K3 emerges with 10,913 likes",
+      "DeepSeek-V4-Flash at 2.8M downloads",
+      "Uncensored Qwen3.8 variants explode in popularity",
+      "DeepSeek V4 Pro-0813 joins competitive landscape"
+    ],
+    "ai-community": [
+      "Planning, not execution, is agent bottleneck",
+      "PlannerCritic engine: LLMs critique plans",
+      "ReFind boosts agent memory via search",
+      "Guardrails fail without financial context",
+      "Felony Bench benchmark: Be AI, Do Crime",
+      "Pi Agent vs OpenCode after 100+ hours"
+    ]
+  }
+}
